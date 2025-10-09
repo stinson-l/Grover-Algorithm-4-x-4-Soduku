@@ -8,18 +8,18 @@ The Erdős Institute Quantum Computing Boot Camp Mini Project
 
 A hybrid quantum-classical implementation that solves Sudoku puzzles using Grover's search algorithm. This educational project demonstrates quantum computing principles applied to constraint satisfaction problems, with a working implementation for 4×4 Sudoku puzzles.
 
-## 🌟 Key Features
+## Key Features
 
-- ✅ **Working 4×4 Sudoku Solver**: Fully functional implementation using Grover's algorithm
-- 🔄 **Hybrid Approach**: Combines classical validation with quantum search
-- 🎯 **Accurate Solutions**: Guarantees valid Sudoku solutions through comprehensive verification
-- 📚 **Educational Value**: Clear demonstration of quantum computing concepts
-- 🛡️ **Robust Error Handling**: Graceful fallback to classical solutions when needed
-- 📊 **Performance Analysis**: Detailed output showing quantum state measurements
+- **Working 4×4 Sudoku Solver**: Fully functional implementation using Grover's algorithm
+- **Hybrid Approach**: Combines classical validation with quantum search
+- **Accurate Solutions**: Valid Sudoku solutions through comprehensive verification
+- **Error Handling**: Fallback to classical solutions when needed
+- **Performance Analysis**: Detailed output showing quantum state measurements
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
+- [Why](#-why-choose-the-project)
 - [How It Works](#-how-it-works)
 - [Installation](#-installation)
 - [Quick Start](#-quick-start)
@@ -31,7 +31,7 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 - [Citation](#-citation)
 - [License](#-license)
 
-## 🎯 Overview
+## Overview
 
 This project implements a quantum algorithm for solving Sudoku puzzles, demonstrating how Grover's algorithm can be applied to real constraint satisfaction problems. The implementation uses a hybrid quantum-classical approach to ensure accurate solutions while showcasing quantum computing principles.
 
@@ -42,7 +42,7 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
 - **Hybrid Computing**: Shows how quantum and classical computing can work together
 - **Search Problem**: Sudoku naturally maps to Grover's search algorithm
 
-## 🔬 How It Works
+## How It Works
 
 ### 1. **Classical Preprocessing**
    - Finds valid solutions using classical backtracking
@@ -66,13 +66,12 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
    - Validates box uniqueness (1-4 in each 2×2 box)
    - Ensures original constraints are preserved
 
-## 🔧 Installation
+## Installation
 
 ### Prerequisites
 
 - Python 3.8 or higher
 - pip package manager
-- 4GB RAM minimum (for quantum simulation)
 
 ### Step-by-Step Setup
 
@@ -106,7 +105,7 @@ numpy>=1.24.0
 matplotlib>=3.7.0
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 import numpy as np
@@ -132,7 +131,7 @@ print(solution)
 #  [4 1 2 3]]
 ```
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Basic Usage
 
@@ -181,7 +180,7 @@ solution = test_4x4_sudoku()
 # - Constraint matching
 ```
 
-## 🧮 Algorithm Details
+## Algorithm Details
 
 ### Quantum State Representation
 
@@ -278,12 +277,12 @@ quantum-sudoku-solver/
 
 ### Areas for Contribution
 
-- 🔧 **Algorithm Optimization**: Improve oracle efficiency
-- 📈 **Success Rate**: Enhance measurement strategies
-- 🧪 **Testing**: Add more test cases and puzzles
-- 📖 **Documentation**: Improve educational materials
-- 🎨 **Visualization**: Create circuit and solution visualizers
-- 🔬 **Research**: Explore alternative quantum approaches
+- **Algorithm Optimization**: Improve oracle efficiency
+- **Success Rate**: Enhance measurement strategies
+- **Testing**: Add more test cases and puzzles
+- **Documentation**: Improve educational materials
+- **Visualization**: Create circuit and solution visualizers
+- **Research**: Explore alternative quantum approaches
 
 ### How to Contribute
 
@@ -319,7 +318,7 @@ python examples/benchmarks.py
 ```
 
 
-## 📈 Benchmarks
+## Benchmarks
 
 ### Quantum vs Classical Comparison
 
