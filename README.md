@@ -35,9 +35,9 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 
 This project implements a quantum algorithm for solving Sudoku puzzles, demonstrating how Grover's algorithm can be applied to real constraint satisfaction problems. The implementation uses a hybrid quantum-classical approach to ensure accurate solutions while showcasing quantum computing principles.
 
-### Why Quantum Sudoku?
+## Why Quantum Sudoku?
 
-- **Educational**: Perfect example for learning quantum algorithms
+- **Educational**: Perfect example for learning quantum algorithms in a well-known game
 - **Practical Constraints**: Demonstrates real limitations of current quantum hardware
 - **Hybrid Computing**: Shows how quantum and classical computing can work together
 - **Search Problem**: Sudoku naturally maps to Grover's search algorithm
@@ -74,6 +74,12 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
 - pip package manager
 
 ### Step-by-Step Setup
+
+#### Method 1
+
+- Compile the file via Jupyter Notebook or other similar computing platforms
+
+#### Method 2
 
 1. **Clone the repository**
 ```bash
@@ -246,7 +252,7 @@ quantum-sudoku-solver/
 | `verify_sudoku_solution()` | Validates solution correctness |
 | `decode_solution()` | Converts quantum state to grid |
 
-## 📊 Performance & Limitations
+## Performance & Limitations
 
 ### Performance Metrics
 
@@ -335,7 +341,7 @@ python examples/benchmarks.py
 - **1000 shots**: 95%+ probability of finding solution
 
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -349,13 +355,4 @@ of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction...
 ```
 
-## 🙏 Acknowledgments
 
-- **IBM Qiskit Team** - For the quantum computing framework
-- **Quantum Computing Community** - For inspiration and support
-- **Contributors** - Everyone who helps improve this project
-
-
-
-<i>Bridging classical and quantum computing, one puzzle at a time</i>
-</p>
