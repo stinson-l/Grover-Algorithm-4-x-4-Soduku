@@ -83,8 +83,8 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/quantum-sudoku-solver.git
-cd quantum-sudoku-solver
+git clone https://github.com/stinson-l/grover-algorithm-4-x-4-soduku-.git
+cd grover-4x4-soduku
 ```
 
 2. **Create virtual environment**
