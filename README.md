@@ -248,6 +248,7 @@ quantum-sudoku-solver/
 ## Citation
 
 If you use this code in your research, please cite:
+
 @software{Grover-Algorithm-4-x-4-Soduku,
   title = {Quantum Sudoku Solver using Grover's Algorithm},
   author = {Stinson Lee},
