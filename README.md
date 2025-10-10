@@ -74,12 +74,6 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
 
 ### Step-by-Step Setup
 
-#### Method 1
-
-- Compile the .ipynb file via Jupyter Notebook or other similar computing platforms
-
-#### Method 2
-
 1. **Clone the repository**
 ```bash
 git clone https://github.com/stinson-l/Grover-Algorithm-4-x-4-Soduku.git
