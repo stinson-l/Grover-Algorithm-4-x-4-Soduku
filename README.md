@@ -27,7 +27,6 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 - [Algorithm Details](#-algorithm-details)
 - [Code Structure](#-code-structure)
 - [Performance & Limitations](#-performance--limitations)
-- [Contributing](#-contributing)
 - [Citation](#-citation)
 - [License](#-license)
 
@@ -83,19 +82,20 @@ This project implements a quantum algorithm for solving Sudoku puzzles, demonstr
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/stinson-l/grover-algorithm-4-x-4-soduku.git
-cd grover_4x4_soduku
+git clone https://github.com/stinson-l/Grover-Algorithm-4-x-4-Soduku.git
+cd Grover-Algorithm-4-x-4-Soduku
 ```
 
-2. **Create virtual environment**
+2. **Create virtual environment (Optional)**
 ```bash
 python -m venv quantum_env
-source quantum_env/bin/activate  # On Windows: quantum_env\Scripts\activate
+source quantum_env/bin/activate   # On Windows: quantum_env\Scripts\activate
 ```
 
 3. **Install dependencies**
 ```bash
-pip install qiskit qiskit-aer numpy matplotlib
+pip install --upgrade pip
+pip install qiskit qiskit-aer numpy matplotlib jupyter
 ```
 
 Or use requirements.txt:
@@ -111,66 +111,23 @@ numpy>=1.24.0
 matplotlib>=3.7.0
 ```
 
-## Quick Start
+4. **Launch Program**
 
-```python
-import numpy as np
-from quantum_sudoku_solver import solve_sudoku_grover
+   ## Method 1: Using Jupyter Notebook 
+   ```bash
+   jupyter notebook Grover_4x4_Soduku.ipynb
+   ```
 
-# Define a 4×4 Sudoku puzzle (0 = empty cell)
-puzzle = np.array([
-    [1, 0, 3, 0],
-    [0, 3, 0, 1],
-    [3, 0, 1, 0],
-    [0, 1, 0, 3]
-])
+   ## Method 2: Using Jupyter Lab
+   ```bash
+   jupyter lab Grover_4x4_Soduku.ipynb
+   ```
 
-# Solve using quantum algorithm
-solution = solve_sudoku_grover(puzzle, n=2)
-
-print("Solution:")
-print(solution)
-# Output:
-# [[1 4 3 2]
-#  [2 3 4 1]
-#  [3 2 1 4]
-#  [4 1 2 3]]
-```
-
-## Usage Examples
-
-### Basic Usage
-
-```python
-# Run the complete demonstration
-from quantum_sudoku_solver import run_sudoku_demo
-
-result = run_sudoku_demo()
-```
-
-### Custom Puzzles
-
-```python
-# Create your own 4×4 puzzle
-custom_puzzle = np.array([
-    [2, 0, 0, 3],
-    [0, 0, 4, 0],
-    [0, 3, 0, 0],
-    [4, 0, 0, 1]
-])
-
-# Solve with custom parameters
-solution = solve_sudoku_grover(
-    puzzle=custom_puzzle,
-    n=2,  # 4×4 Sudoku
-    max_iterations=5  # Grover iterations
-)
-
-# Verify the solution
-from quantum_sudoku_solver import verify_sudoku_solution
-is_valid = verify_sudoku_solution(solution, n=2)
-print(f"Solution is valid: {is_valid}")
-```
+   ## Method 3: Run like a Python script
+   ```bash
+   jupyter nbconvert --to script Grover_4x4_Soduku.ipynb
+   python Grover_4x4_Soduku.py
+   ```
 
 ### Analyzing Results
 
@@ -220,25 +177,11 @@ Optimal iterations: `⌊π/4 × √(N/M)⌋`
 ```
 quantum-sudoku-solver/
 │
-├── quantum_sudoku_solver.py     # Main implementation
+├── Grover_4x4_Soduku.ipynb       # Main implementation
 ├── README.md                     # This file
 ├── requirements.txt              # Dependencies
-├── LICENSE                       # MIT License
-│
-├── examples/
-│   ├── basic_usage.py           # Simple examples
-│   ├── custom_puzzles.py        # Advanced usage
-│   └── benchmarks.py            # Performance tests
-│
-├── docs/
-│   ├── algorithm_theory.md      # Detailed theory
-│   ├── implementation_notes.md   # Technical details
-│   └── quantum_concepts.md      # Educational material
-│
-└── tests/
-    ├── test_solver.py            # Unit tests
-    ├── test_oracle.py            # Oracle tests
-    └── test_verification.py      # Validation tests
+└──  LICENSE                       # MIT License
+
 ```
 
 ### Core Functions
@@ -289,39 +232,6 @@ quantum-sudoku-solver/
 - **Documentation**: Improve educational materials
 - **Visualization**: Create circuit and solution visualizers
 - **Research**: Explore alternative quantum approaches
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch
-```bash
-git checkout -b feature/amazing-improvement
-```
-3. Make your changes and commit
-```bash
-git commit -m 'Add amazing improvement'
-```
-4. Push to your branch
-```bash
-git push origin feature/amazing-improvement
-```
-5. Open a Pull Request
-
-### Development Setup
-
-```bash
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-pytest tests/
-
-# Check code style
-flake8 quantum_sudoku_solver.py
-
-# Run benchmarks
-python examples/benchmarks.py
-```
 
 
 ## Benchmarks
