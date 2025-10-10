@@ -231,7 +231,7 @@ quantum-sudoku-solver/
 ### Quantum vs Classical Comparison
 
 | Approach | Time Complexity  | Scalability |
-|----------|----------------|----------|-------------|
+|----------|----------------|----------|
 | Classical Backtracking | O(n^(n²)) | Good |
 | Grover's (Theoretical) | O(√(n^(n²)))  | Limited by qubits |
 
