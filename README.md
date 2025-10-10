@@ -180,7 +180,7 @@ quantum-sudoku-solver/
 ├── Grover_4x4_Soduku.ipynb       # Main implementation
 ├── README.md                     # This file
 ├── requirements.txt              # Dependencies
-└──  LICENSE                       # MIT License
+└── LICENSE                       # MIT License
 
 ```
 
