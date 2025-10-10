@@ -127,14 +127,17 @@ matplotlib>=3.7.0
 
 ```python
 # Get detailed analysis
-from quantum_sudoku_solver import test_4x4_sudoku
+from Grover_4x4_Soduku import run_sudoku_demo, draw_grover_circuit
 
-solution = test_4x4_sudoku()
+solution = run_sudoku_demo()
 # This provides detailed verification output including:
 # - Row validity
 # - Column validity  
 # - Box validity
 # - Constraint matching
+
+circuit = draw_grover_circuit()
+# This provides visualization of the quantum circuit
 ```
 
 ## Algorithm Details
@@ -182,25 +185,20 @@ quantum-sudoku-solver/
 
 | Function | Description |
 |----------|-------------|
-| `solve_sudoku_grover()` | Main solver using Grover's algorithm |
 | `classical_solve_4x4()` | Classical backtracking solver |
+| `is_valid_sudoku_state()` | Checking solution for the result |
+| `encode_sudoku_state()` | Encoding Sokuku problem |
+| `puzzle_to_constraints()` | Tranfering cells into qubits |
 | `create_marking_oracle()` | Constructs quantum oracle |
+| `create_constraint_oracle()` | Creating constraints |
 | `grover_diffuser()` | Grover diffusion operator |
-| `verify_sudoku_solution()` | Validates solution correctness |
+| `solve_sudoku_grover()` | Using Grover algorithm to solve Sudoku |
 | `decode_solution()` | Converts quantum state to grid |
+| `verify_sudoku_solution()` | Validates solution correctness |
+| `draw_grover_circuit()` | Draws quantum circuit |
+| `test_4x4_sudoku()` | Test Soduku for n = 2 |
+| `create_9x9_framework()` | Test the Computing ability for Soduku n = 3 |
 
-## Performance & Limitations
-
-### Performance Metrics
-
-| Metric | Value |
-|--------|-------|
-| **Qubits Required** | 32 (for 4×4) |
-| **Circuit Depth** | ~50-100 gates |
-| **Grover Iterations** | 3-5 typical |
-| **Success Rate** | 95%+ (with hybrid approach) |
-| **Execution Time** | 2-5 seconds |
-| **Memory Usage** | ~500MB |
 
 ### Scalability Challenges
 
@@ -232,11 +230,10 @@ quantum-sudoku-solver/
 
 ### Quantum vs Classical Comparison
 
-| Approach | Time Complexity | 4×4 Time | Scalability |
+| Approach | Time Complexity  | Scalability |
 |----------|----------------|----------|-------------|
-| Classical Backtracking | O(n^(n²)) | <1ms | Good |
-| Grover's (Theoretical) | O(√(n^(n²))) | ~3s | Limited by qubits |
-| Hybrid (This Implementation) | O(n^(n²)) + O(√N) | ~2s | Practical |
+| Classical Backtracking | O(n^(n²)) | Good |
+| Grover's (Theoretical) | O(√(n^(n²)))  | Limited by qubits |
 
 ### Success Rates
 
