@@ -1,4 +1,4 @@
-# Grover-Algorithm-4-x-4-Soduku-
+# Grover-Algorithm-4-x-4-Soduku
 The Erdős Institute Quantum Computing Boot Camp Mini Project
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -22,11 +22,12 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 - [Why](#-why-choose-the-project)
 - [How It Works](#-how-it-works)
 - [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [Usage Examples](#-usage-examples)
+- [Analyzing Results](#-analyzing-results)
 - [Algorithm Details](#-algorithm-details)
 - [Code Structure](#-code-structure)
 - [Performance & Limitations](#-performance--limitations)
+- [Areas for Contribution](#-areas-for-contribution)
+- [Benchmarks](#-benchmarks)
 - [Citation](#-citation)
 - [License](#-license)
 
@@ -123,7 +124,7 @@ matplotlib>=3.7.0
    python Grover_4x4_Soduku.py
    ```
 
-### Analyzing Results
+## Analyzing Results
 
 ```python
 # Get detailed analysis
@@ -169,7 +170,7 @@ Optimal iterations: `⌊π/4 × √(N/M)⌋`
 - **Selection**: Most probable state that satisfies constraints
 - **Fallback**: Classical solution if quantum fails
 
-## 📁 Code Structure
+## Code Structure
 
 ```
 quantum-sudoku-solver/
@@ -200,6 +201,8 @@ quantum-sudoku-solver/
 | `create_9x9_framework()` | Test the Computing ability for Soduku n = 3 |
 
 
+## Performance & Limitations
+
 ### Scalability Challenges
 
 | Sudoku Size | Qubits Needed | Feasibility |
@@ -216,7 +219,7 @@ quantum-sudoku-solver/
 4. **Oracle Complexity**: Simplified oracle for practical implementation
 
 
-### Areas for Contribution
+## Areas for Contribution
 
 - **Algorithm Optimization**: Improve oracle efficiency
 - **Success Rate**: Enhance measurement strategies
@@ -240,6 +243,17 @@ quantum-sudoku-solver/
 - **With valid puzzle**: 100% (guaranteed by hybrid approach)
 - **Pure quantum**: 40-60% per measurement
 - **1000 shots**: 95%+ probability of finding solution
+
+
+## Citation
+
+If you use this code in your research, please cite:
+@software{Grover-Algorithm-4-x-4-Soduku,
+  title = {Quantum Sudoku Solver using Grover's Algorithm},
+  author = {Stinson Lee},
+  year = {2025},
+  url = {https://github.com/stinson-l/Grover-Algorithm-4-x-4-Soduku}
+}
 
 
 ## License
