@@ -11,7 +11,7 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 ## Key Features
 
 - **Working 4×4 Sudoku Solver**: Fully functional implementation using Grover's algorithm
-- **Hybrid Approach**: Combines classical validation with quantum search
+- **Key Features**: Without using Simulator and classical computation method
 - **Accurate Solutions**: Valid Sudoku solutions through comprehensive verification
 - **Error Handling**: Fallback to classical solutions when needed
 - **Performance Analysis**: Detailed output showing quantum state measurements
@@ -33,34 +33,29 @@ A hybrid quantum-classical implementation that solves Sudoku puzzles using Grove
 
 ## Overview
 
-This project implements a quantum algorithm for solving Sudoku puzzles, demonstrating how Grover's algorithm can be applied to real constraint satisfaction problems. The implementation uses a hybrid quantum-classical approach to ensure accurate solutions while showcasing quantum computing principles.
+This project implements a quantum algorithm for solving Sudoku puzzles, demonstrating how Grover's algorithm can be applied to real constraint satisfaction problems. The implementation without the useage of a classical approach and Simulator such that purely depends on quantum computing principles.
 
 ## Why Quantum Sudoku?
 
 - **Educational**: Perfect example for learning quantum algorithms in a well-known game
 - **Practical Constraints**: Demonstrates real limitations of current quantum hardware
-- **Hybrid Computing**: Shows how quantum and classical computing can work together
 - **Search Problem**: Sudoku naturally maps to Grover's search algorithm
 
 ## How It Works
 
-### 1. **Classical Preprocessing**
-   - Finds valid solutions using classical backtracking
-   - Constructs an oracle based on known valid solutions
-   - Ensures correctness of quantum results
 
-### 2. **Quantum State Encoding**
+### 1. **Quantum State Encoding**
    - Each Sudoku cell: 2 qubits (for values 1-4)
    - Total for 4×4: 32 qubits
    - Binary encoding minimizes qubit usage
 
-### 3. **Grover's Algorithm**
+### 2. **Grover's Algorithm**
    - **Initialization**: Uniform superposition over all states
    - **Oracle**: Marks valid Sudoku solutions
    - **Diffusion**: Amplifies probability of marked states
    - **Measurement**: Collapses to solution with high probability
 
-### 4. **Solution Verification**
+### 3. **Solution Verification**
    - Validates row uniqueness (1-4 in each row)
    - Validates column uniqueness (1-4 in each column)
    - Validates box uniqueness (1-4 in each 2×2 box)
@@ -186,7 +181,6 @@ quantum-sudoku-solver/
 
 | Function | Description |
 |----------|-------------|
-| `classical_solve_4x4()` | Classical backtracking solver |
 | `is_valid_sudoku_state()` | Checking solution for the result |
 | `encode_sudoku_state()` | Encoding Sokuku problem |
 | `puzzle_to_constraints()` | Tranfering cells into qubits |
@@ -194,8 +188,9 @@ quantum-sudoku-solver/
 | `create_constraint_oracle()` | Creating constraints |
 | `grover_diffuser()` | Grover diffusion operator |
 | `solve_sudoku_grover()` | Using Grover algorithm to solve Sudoku |
+| `varification_4x4()` | Setup the calculation to check the correctness |
 | `decode_solution()` | Converts quantum state to grid |
-| `verify_sudoku_solution()` | Validates solution correctness |
+| `verify_sudoku_solution()` | Validates the final solution correctness |
 | `draw_grover_circuit()` | Draws quantum circuit |
 | `test_4x4_sudoku()` | Test Soduku for n = 2 |
 | `create_9x9_framework()` | Test the Computing ability for Soduku n = 3 |
