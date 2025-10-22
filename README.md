@@ -227,9 +227,8 @@ quantum-sudoku-solver/
 
 ### Success Rates
 
-- **With valid puzzle**: 100% (guaranteed by hybrid approach)
-- **Pure quantum**: 40-60% per measurement
-- **1000 shots**: 95%+ probability of finding solution
+- **Pure Quantum**: 40-60% per measurement
+- **1000 Shots**: 95%+ probability of finding solution
 
 
 ## Citation
