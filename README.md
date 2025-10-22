@@ -6,14 +6,13 @@ The Erdős Institute Quantum Computing Boot Camp Mini Project
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0%2B-purple)](https://qiskit.org/)
 [![Quantum Computing](https://img.shields.io/badge/Quantum-Computing-green)](https://en.wikipedia.org/wiki/Quantum_computing)
 
-A hybrid quantum-classical implementation that solves Sudoku puzzles using Grover's search algorithm. This educational project demonstrates quantum computing principles applied to constraint satisfaction problems, with a working implementation for 4×4 Sudoku puzzles. There are detail documentations for the code in Grover_4x4_Soduku.ipynb file.
+A implementation solves Sudoku puzzles using Grover's search algorithm without applying Simulator. This educational project demonstrates quantum computing principles applied to constraint satisfaction problems, with a working implementation for 4×4 Sudoku puzzles. There are detail documentations for the code in Grover_4x4_Soduku.ipynb file.
 
 ## Key Features
 
 - **Working 4×4 Sudoku Solver**: Fully functional implementation using Grover's algorithm
 - **Key Features**: Without using Simulator and classical computation method
 - **Accurate Solutions**: Valid Sudoku solutions through comprehensive verification
-- **Error Handling**: Fallback to classical solutions when needed
 - **Performance Analysis**: Detailed output showing quantum state measurements
 
 ## Table of Contents
@@ -163,7 +162,7 @@ Optimal iterations: `⌊π/4 × √(N/M)⌋`
 
 - **Shots**: 1000 measurements
 - **Selection**: Most probable state that satisfies constraints
-- **Fallback**: Classical solution if quantum fails
+- **Fallback**: Abort the computation
 
 ## Code Structure
 
@@ -209,9 +208,8 @@ quantum-sudoku-solver/
 ### Current Limitations
 
 1. **Size Constraint**: Limited to 4×4 puzzles due to qubit requirements
-2. **Simulator Bounds**: 32 qubits near classical simulation limits
-3. **Circuit Depth**: Deep circuits suffer from noise on real hardware
-4. **Oracle Complexity**: Simplified oracle for practical implementation
+2. **Circuit Depth**: Deep circuits suffer from noise on real hardware
+3. **Oracle Complexity**: Simplified oracle for practical implementation
 
 
 ## Areas for Contribution
@@ -226,12 +224,6 @@ quantum-sudoku-solver/
 
 ## Benchmarks
 
-### Quantum vs Classical Comparison
-
-| Approach | Time Complexity  | Scalability |
-|----------|----------------|----------|
-| Classical Backtracking | O(n^(n²)) | Good |
-| Grover's (Theoretical) | O(√(n^(n²)))  | Limited by qubits |
 
 ### Success Rates
 
