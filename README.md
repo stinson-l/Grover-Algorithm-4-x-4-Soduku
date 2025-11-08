@@ -6,7 +6,7 @@ The Erdős Institute Quantum Computing Boot Camp Mini Project
 [![Qiskit](https://img.shields.io/badge/Qiskit-1.0%2B-purple)](https://qiskit.org/)
 [![Quantum Computing](https://img.shields.io/badge/Quantum-Computing-green)](https://en.wikipedia.org/wiki/Quantum_computing)
 
-A implementation solves Sudoku puzzles using Grover's search algorithm without applying Simulator. This educational project demonstrates quantum computing principles applied to constraint satisfaction problems, with a working implementation for 4×4 Sudoku puzzles. There are detail documentations for the code in Grover_4x4_Soduku.ipynb file.
+An implementation solves Sudoku puzzles using Grover's search algorithm without applying Simulator. This educational project demonstrates quantum computing principles applied to constraint satisfaction problems, with a working implementation for 4×4 Sudoku puzzles. There are detail documentations for the code in Grover_4x4_Soduku.ipynb file.
 
 ## Key Features
 
